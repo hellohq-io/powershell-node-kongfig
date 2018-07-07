@@ -5,4 +5,4 @@ RUN curl -sL https://deb.nodesource.com/setup_9.x | bash
 RUN apt-get install nodejs -y
 
 # Install kongfig
-RUN npm install --global qongfig:1.0.0
+RUN npm install --global qongfig@1.0.0
