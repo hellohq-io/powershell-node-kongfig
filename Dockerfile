@@ -1,8 +1,7 @@
-FROM microsoft/powershell:ubuntu14.04
-
-# Install node
-RUN curl -sL https://deb.nodesource.com/setup_9.x | bash
-RUN apt-get install nodejs -y
-
-# Install kongfig
-RUN npm install --global qongfig@1.0.1
+FROM mcr.microsoft.com/powershell:ubuntu-16.04
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash \
+ && apt-get install nodejs -y \
+ && npm install --global qongfig@1.0.3 \
+ && chmod +x /usr/lib/node_modules/qongfig/bin/kongfig \
+ && chmod +x /usr/lib/node_modules/qongfig/bin/kongfig-apply \
+ && chmod +x /usr/lib/node_modules/qongfig/bin/kongfig-dump
