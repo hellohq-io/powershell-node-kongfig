@@ -1,4 +1,4 @@
-# [powershell-node-kongfig](https://hub.docker.com/r/powershell-node-kongfig)
+# [powershell-node-kongfig](https://hub.docker.com/r/hellohq/powershell-node-kongfig/)
 
 **Docker image that includes `pwsh` and `kongfig`.**
 
