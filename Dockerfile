@@ -1,7 +1,6 @@
-FROM mcr.microsoft.com/powershell:ubuntu-16.04
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash \
+FROM mcr.microsoft.com/powershell:6.1.0-ubuntu-18.04
+
+RUN apt-get update \
  && apt-get install nodejs -y \
- && npm install --global qongfig@1.0.4 \
- && chmod +x /usr/lib/node_modules/qongfig/bin/kongfig \
- && chmod +x /usr/lib/node_modules/qongfig/bin/kongfig-apply \
- && chmod +x /usr/lib/node_modules/qongfig/bin/kongfig-dump
+ && apt-get install npm -y \
+ && npm install --global qongfig@1.0.4
