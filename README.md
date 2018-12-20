@@ -13,7 +13,7 @@ docker pull hellohq/powershell-node-kongfig
 - `pwsh`: v6.0.2
 - `node`: v10.6.0
 - `npm`: v6.1.0
-- `kongfig`: v1.0.6
+- `kongfig`: v1.0.7
 
 ## License
 
